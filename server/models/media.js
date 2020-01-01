@@ -7,15 +7,22 @@ const mediaSchema = mongoose.Schema({
         required: true,
         maxlength: 50
     },
-    producer: {
-        type: String,
-        required: true,
-        maxlength: 50
-    },
-    genre: {
-        type: String,
-        required: true,
-    },
+    producers:
+        [
+            {
+                type: String,
+                required: true,
+                maxlength: 50
+            }
+        ],
+    genres:
+        [
+            {
+                type: String,
+                required: true
+            }
+        ]
+    ,
     artist: {
         type: String,
         required: true,

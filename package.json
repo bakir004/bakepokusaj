@@ -8,7 +8,9 @@
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "seed": "node server/seed.js",
+    "backend": "concurrently \"npm run seed\" \"npm run server\"",
+    "dev": "concurrently \"npm run client\" \"npm run backend\""
   },
   "engines": {
     "node": "10.16.0"
