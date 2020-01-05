@@ -67,13 +67,13 @@ const medias = [
         name: "Frozen",
         producers: ["Robert Lopez", "Kristen Anderson-Lopez", "Christope Beck"],
         genres: ["Pop", "Musical theatre"],
-        artist: "Varius Artist",
+        artist: "Varius Artists",
         country: "USA"
     },
     {
         _id: "5d67d0a888d4fc276cd2a435",
         image: "https://upload.wikimedia.org/wikipedia/en/0/0b/Tattoos_by_Jason_Derulo.jpg",
-        name: "Tatoos",
+        name: "Tattoos",
         producers: ["Frank Harris", "BeatGeek", "DJ Buddha"],
         genres: ["R&B", "Pop"],
         artist: "Jason Derulo",

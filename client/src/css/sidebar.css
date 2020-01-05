@@ -1,0 +1,53 @@
+.sidebar {
+    width: 100%;
+}
+i {
+    width:20px;
+    margin-right: 20px;
+    padding-left: 7px;
+    transition: 0.3s;
+}
+.header {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    background-color: #ffaa00;
+    color: white;
+    margin-bottom: 10px;
+}
+.link-text {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-transform:scale(1.2,1);
+    -moz-transform:scale(1.2,1); /* Firefox */
+    -ms-transform:scale(1.2,1); 
+    -o-transform:scale(1.2,1); 
+    transform:scale(1.2,1);
+    transition: 0.3s;
+}
+.link-text:hover {
+    text-decoration: inherit;
+    transition: 0.3s;
+}
+.link {
+    height: 50px;
+    margin: 12px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.link:hover {
+    color:#ffaa00;
+    transition: 0.3s;
+}
+.clicked {
+    color:#ffaa00;
+    border-left: 3px solid #ffaa00;
+}
+.text-clicked {
+    color:#ffaa00;
+    padding-right: 3px;
+}
