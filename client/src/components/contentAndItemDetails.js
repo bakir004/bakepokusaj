@@ -7,6 +7,8 @@ class ContentAndItemDetails extends Component {
         media: {}
     }
     sendMedia = (media) => {
+        if (media === null)
+            this.setState({ media: {} })
         this.setState({ media })
     }
     render() {
@@ -16,7 +18,7 @@ class ContentAndItemDetails extends Component {
                     <Content sendMedia={this.sendMedia}></Content>
                 </div>
                 <div className="col-md-3 col-xs-12">
-                    <ItemDetails media={this.state.media}></ItemDetails>
+                    <ItemDetails media={this.state.media} handleDelete={this.handleDelete}></ItemDetails>
                 </div>
             </div >);
     }

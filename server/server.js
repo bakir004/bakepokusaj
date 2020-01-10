@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 const config = require("./config/config").get(process.env.NODE_ENV);
 
+mongoose.set('useFindAndModify', false);
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DATABASE, {
     useNewUrlParser: true,
@@ -112,18 +113,33 @@ app.post("/media", (req, res) => {
 
     media.save((err, doc) => {
         if (err) return res.status(400).send(err);
-        res.status(200).send(doc)
+        res.status(200).send("ok")
     })
 })
+// -----------=========== UPDATE ===========-----------
+
+app.post("/media/edit", (req, res) => {
+    Media.findByIdAndUpdate(req.body._id, req.body, { new: true }, (err, doc) => {
+        if (err) return res.status(400).send(err);
+        res.json({
+            success: true,
+            doc
+        });
+    });
+})
+
 
 // -----------=========== DELETE ===========-----------
 
-app.delete("/media_delete", (req, res) => {
-    let id = req.query.id;
+app.get("/media/delete/:id", (req, res) => {
+    let id = req.params.id;
 
     Media.findByIdAndDelete(id, (err, doc) => {
         if (err) return res.status(400).send(err);
-        res.json(doc);
+        Media.find({}, (err, docs) => {
+            if (err) return res.status(400).send(err);
+            return res.json(docs)
+        })
     });
 })
 

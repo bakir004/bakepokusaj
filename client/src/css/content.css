@@ -5,7 +5,16 @@ body {
     width:100%;
     height:100%;
     transition: 0.3s;
-    padding: 5px;
+    z-index: -1;
+    position: relative;
+}
+.image-div:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+    z-index: 1;
+}
+.image-div {
+    transition: 0.2s;
 }
 .no-padding {
     padding: 0;
@@ -19,4 +28,72 @@ body {
 .forms {
     margin-left: 15px;
 }
+.overlay {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.text {
+    color: white;
+    text-align: center;
+    width: 33%;
+    height: 33%;
+    margin: 33%;
+    padding: 0;
+    cursor: pointer;
+    display: none;
+}
+.show {
+    display: inline-block;
+}
+.text i {
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size:20px;
 
+}
+.loading {
+    margin: 100px auto;
+}
+
+.button-warning {
+    background-color: white;
+    border: none;
+    color: #eb4034;
+    font-weight: 800;
+}
+.button-warning:hover {
+    background-color: #ffaa00;
+    font-weight: 800;
+    color: white;
+    border: none;
+}
+.none {
+    opacity: 0;
+    margin: 10px 0
+}
+.warning-red {
+    margin: 10px 0;
+    color: #f54242;
+    display: block;
+    text-align: center;
+}
+.plus-div {
+    border: 3px solid #ffaa00;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+}
+.plus-icon {
+    color: #ffaa00;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin: 33% 0;
+}
+.input-icon-div {
+    width: 100%;
+}

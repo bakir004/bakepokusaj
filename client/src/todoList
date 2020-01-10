@@ -1,0 +1,13 @@
+1. Skontat DELETE i PUT metode u axiosu (za sada su GET i POST)
+2. Zavrsit dodavanje komponente modal sa create i update
+3. Uradit modale lijepo (styleati)
+4. Komponentu forms uradit sa material ui
+5. Ocistiti komponentu content.js
+6. * Dodati sortiranje po vise kriterija
+7. Zavrsiti sidebar.js (styleati)
+8. Uraditi create modal sa Bootstrap -> Material ui
+9. STYLE STYLE STYLE
+
+od prosli put sta treba
+
+1. Zavrsiti funkcionalnost zanrova i producera u edit modalu
