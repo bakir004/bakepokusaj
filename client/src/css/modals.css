@@ -29,8 +29,11 @@
 }
 .modal-producers {
     font-size: 17px;
-    margin-bottom: 5px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
 }
+
 .modal-genres {
     font-size: 15px;
     letter-spacing: 1px;
@@ -40,6 +43,10 @@
     -ms-transform:scale(1.2,1); 
     -o-transform:scale(1.2,1); 
     transform:scale(1.2,1); 
+}
+.modal-comma {
+    font-size: inherit;
+    display: inline
 }
 .modal-country {
     font-size: 17px;
@@ -51,6 +58,10 @@
 }
 .modal-input-divs {
     padding: 0
+}
+.modal-preview {
+    display: inline-block;
+    font-weight: 400;
 }
 .invisible-inputs {
     display:none
@@ -90,5 +101,8 @@
     }
     .invisible-inputs-2 {
         display: none
+    }
+    .modal-preview {
+        display: none;
     }
 }
